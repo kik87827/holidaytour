@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+/node_modules
+
+/.history
+
+
+
+*.map
+
+=======
+/node_modules
+
+/.history
+
+*.json
+>>>>>>> master

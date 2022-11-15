@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('./include/head.html')
+
+<body class="front_body">
+	<div class="page_wrap">
+		@@include('./include/header.html')
+		<!-- middle -->
+		<section class="middle_zone">
+			<!-- main visual -->
+			<div class="mv_zone">
+				<a href="javascript:;" class="btn_mv_control prev_control"><span class="hdtext">이전</span></a>
+				<div class="swiper-container mv_container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="mv_item" style="background-image:url(./images/main/mv_01.jpg)"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="mv_item" style="background-image:url(./images/main/mv_02.jpg)"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="mv_item" style="background-image:url(./images/main/mv_03.jpg)"></a>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_mv_control next_control"><span class="hdtext">다음</span></a>
+				<div class="mv_bottom_control_wrap">
+					<div class="mv_bottom_in_control">
+						<div class="mv_bottom_cols has_navi">
+							<div class="swiper-pagination main_visual_paging">
+							</div>
+						</div>
+						<div class="mv_bottom_cols has_auto">
+							<ul class="swiper_auto_control_list">
+								<li><a href="#" class="btn_mv_play"><span class="hdtext">재생</span></a></li>
+								<li><a href="#" class="btn_mv_stop"><span class="hdtext">정지</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mvlayer_parent">
+					<div class="search_field_wrap">
+						<a href="#" class="search_field_cols define_local" id="local_target" data-poslayer="#layer_box_01">
+							<div class="search_field_form">
+								<div class="search_form_label">지역</div>
+								<div class="search_form_text_g">
+									<div class="search_form_text_place">어디로 가세요?</div>
+									<div class="search_form_text_result"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="search_field_cols define_theme" id="theme_target" data-poslayer="#layer_box_02">
+							<div class="search_field_form">
+								<div class="search_form_label">테마</div>
+								<div class="search_form_text_g">
+									<div class="search_form_text_place">취향에 맞는 상품을 원하세요?</div>
+									<div class="search_form_text_result"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="search_field_cols define_start" id="start_target" data-poslayer="#layer_box_03">
+							<div class="search_field_form">
+								<div class="search_form_label">출발일</div>
+								<div class="search_form_text_g">
+									<div class="search_form_text_place">날짜를 입력하세요</div>
+									<div class="search_form_text_result"></div>
+								</div>
+							</div>
+						</a>
+						<div class="search_field_cols define_search">
+							<div class="search_field_form">
+								<p class="search_form_label">검색어</p>
+								<div class="search_form_text_g">
+									<input type="text" class="input_search_form" placeholder="검색어를 입력해주세요">
+								</div>
+							</div>
+						</div>
+						<div class="search_field_cols define_btn">
+							<a href="#" class="btn_search_form"><span class="hdtext">검색</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // main visual -->
+			<!-- main contents -->
+			<div class="mc_zone">
+				<!-- 골프 베스트 -->
+				<div class="mc_row vertical_item">
+					<div class="vertical_title_row"><p class="vertical_title">골프 베스트</p></div>
+					<div class="vertical_control_row">
+						<div class="vertical_control_cols">
+							<div class="btn_mc_small_box_group">
+								<a href="javascript:;" class="btn_mc_small_box active">태국골프</a>
+								<a href="javascript:;" class="btn_mc_small_box">대만골프</a>
+							</div>
+						</div>
+						<div class="vertical_control_cols">
+							<div class="btn_control_box_group">
+								<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
+								<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="vertical_slider_row">
+						<div class="swiper-container" id="best_swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278_2.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">1,090,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278_2.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">1,090,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278_2.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">1,090,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 골프 베스트 -->
+				<!-- 패키지 베스트 -->
+				<div class="mc_row tape_design_item">
+					<div class="tape_design_inner">
+						<div class="tape_control_row">
+							<div class="btn_control_box_group">
+								<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
+								<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
+							</div>
+						</div>
+						<div class="horizontal_item">
+							<div class="horizontal_title_row">
+								<div class="contents_title_copy_group">
+									<p class="contents_title_copy_main">PACKAGE BEST</p>
+									<p class="contents_title_copy_sub">패키지 베스트</p>
+								</div>
+								<p class="contents_title_copy_else">홀리데이투어 패키지추천 여행</p>
+								<div class="btn_mc_small_box_group">
+									<div class="btn_mc_box_row">
+										<a href="javascript:;" class="btn_mc_small_box active">태국 패키지</a>
+									</div>
+									<div class="btn_mc_box_row">
+										<a href="javascript:;" class="btn_mc_small_box">홍콩 패키지</a>
+									</div>
+									<div class="btn_mc_box_row">
+										<a href="javascript:;" class="btn_mc_small_box">대만 패키지</a>
+									</div>
+								</div>
+							</div>
+							<div class="horizontal_slider_row">
+								<!-- package -->
+								<div class="swiper-container" id="package_swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/main/temp_298x278.png" alt="">
+													<div class="thum_layer_group">
+														<span class="thum_label_box bg_brown">태국<br>패키지</span>
+														<span class="thum_label_box bg_orange">베스트</span>
+													</div>
+												</div>
+												<div class="spec_rows">
+													<span class="box_label">HOT</span>
+													<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+													<div class="mc_spec_sub">
+														골프텔 숙박&그린피&조중석식 포함
+													</div>
+													<div class="mc_spec_price">
+														<div class="price_num_group">
+															<span class="price_num_value">799,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/main/temp_298x278_2.png" alt="">
+													<div class="thum_layer_group">
+														<span class="thum_label_box bg_sky">홍콩<br>패키지</span>
+														<span class="thum_label_box bg_orange">베스트</span>
+													</div>
+												</div>
+												<div class="spec_rows">
+													<span class="box_label">HOT</span>
+													<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+													<div class="mc_spec_sub">
+														골프텔 숙박&그린피&조중석식 포함
+													</div>
+													<div class="mc_spec_price">
+														<div class="price_num_group">
+															<span class="price_num_value">1,090,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/main/temp_298x278.png" alt="">
+													<div class="thum_layer_group">
+														<span class="thum_label_box bg_purple">대만<br>패키지</span>
+														<span class="thum_label_box bg_orange">베스트</span>
+													</div>
+												</div>
+												<div class="spec_rows">
+													<span class="box_label">HOT</span>
+													<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+													<div class="mc_spec_sub">
+														골프텔 숙박&그린피&조중석식 포함
+													</div>
+													<div class="mc_spec_price">
+														<div class="price_num_group">
+															<span class="price_num_value">799,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/main/temp_298x278_2.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<span class="box_label">HOT</span>
+													<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+													<div class="mc_spec_sub">
+														골프텔 숙박&그린피&조중석식 포함
+													</div>
+													<div class="mc_spec_price">
+														<div class="price_num_group">
+															<span class="price_num_value">1,090,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/main/temp_298x278.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<span class="box_label">HOT</span>
+													<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+													<div class="mc_spec_sub">
+														골프텔 숙박&그린피&조중석식 포함
+													</div>
+													<div class="mc_spec_price">
+														<div class="price_num_group">
+															<span class="price_num_value">799,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a href="#" class="mc_thumbanner">
+												<div class="thum_rows">
+													<img src="./images/main/temp_298x278_2.png" alt="">
+												</div>
+												<div class="spec_rows">
+													<span class="box_label">HOT</span>
+													<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+													<div class="mc_spec_sub">
+														골프텔 숙박&그린피&조중석식 포함
+													</div>
+													<div class="mc_spec_price">
+														<div class="price_num_group">
+															<span class="price_num_value">1,090,000</span>
+															<span class="price_num_unit">원~</span>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- // packeage -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 패키지 베스트 -->
+				<!-- banner -->
+				<div class="mc_row swiper-container mc_banner_container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" class="mc_banner"><img src="./images/main/temp_long_banner_01.png" alt=""></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="mc_banner"><img src="./images/main/temp_long_banner_02.png" alt=""></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="mc_banner"><img src="./images/main/temp_long_banner_03.png" alt=""></a>
+						</div>
+					</div>
+					<div class="swiper-pagination">
+					</div>
+				</div>
+				<!-- // banner -->
+				<!-- 이번주 BEST 인기 -->
+				<div class="mc_row vertical_item">
+					<div class="vertical_title_row"><p class="vertical_title">이번주 BEST 인기</p></div>
+					<div class="vertical_control_row">
+						<div class="btn_control_box_group">
+							<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
+							<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
+						</div>
+					</div>
+					<div class="vertical_slider_row">
+						<div class="mc_row swiper-container circle_thum_type" id="weekly_swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_300x300.png" alt="">
+											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
+										</div>
+										<div class="spec_rows">
+											<div class="mc_spec_title">대만 3~4일 #화련일주</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_300x300_2.png" alt="">
+											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
+										</div>
+										<div class="spec_rows">
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일 치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함 프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_300x300.png" alt="">
+											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
+										</div>
+										<div class="spec_rows">
+											<div class="mc_spec_title">대만 3~4일 #화련일주</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_300x300_2.png" alt="">
+											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
+										</div>
+										<div class="spec_rows">
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일 치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함 프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_300x300.png" alt="">
+											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
+										</div>
+										<div class="spec_rows">
+											<div class="mc_spec_title">대만 3~4일 #화련일주</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_300x300_2.png" alt="">
+											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
+										</div>
+										<div class="spec_rows">
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일 치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함 프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 이번주 BEST 인기 -->
+				<!-- 울릉도 베스트 -->
+				<div class="mc_row vertical_item">
+					<div class="vertical_title_row"><p class="vertical_title">울릉도 베스트</p></div>
+					<div class="btn_control_box_group">
+						<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
+						<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
+					</div>
+					<div class="vertical_slider_row">
+						<div class="swiper-container" id="best2_swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278_2.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">1,090,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278_2.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">1,090,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">799,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="mc_thumbanner">
+										<div class="thum_rows">
+											<img src="./images/main/temp_298x278_2.png" alt="">
+										</div>
+										<div class="spec_rows">
+											<span class="box_label">HOT</span>
+											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+											<div class="mc_spec_sub">
+												골프텔 숙박&그린피&조중석식 포함
+											</div>
+											<div class="mc_spec_price">
+												<div class="price_num_group">
+													<span class="price_num_value">1,090,000</span>
+													<span class="price_num_unit">원~</span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // 울릉도 베스트 -->
+				<!--  -->
+				<div class="mc_row horizontal_box_group">
+					<div class="horizontal_box_wrap">
+						<div class="horizontal_box wid_short">
+							<div class="guide_title_group">
+								<p class="guide_title_label">고객센터</p>
+								<p class="guide_title_main">031-8067-7900</p>
+							</div>
+							<div class="guide_tail_list_wrap">
+								<ul class="guide_tail_list">
+									<li>평일 : 오전 10:00 ~ 오후 06:00</li>
+									<li>점심 : 오후 12:00 ~ 오후 01:00</li>
+									<li>휴무 : 토 일 공휴일</li>
+								</ul>
+								<ul class="guide_text_item_list">
+									<li><a href="javascript:;" class="guide_text_item">여행관련문의</a></li>
+									<li><a href="javascript:;" class="guide_text_item">입금관련문의</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="horizontal_box wid_mid">
+							<span class="horizontal_flex_ico"></span>
+							<div class="horizontal_flex_content">
+								<p class="guide_info_title">BANK INFO</p>
+								<p class="guide_info_tail">신한은행  140 013 296330<br>예금주  ㈜홀리데이투어</p>
+								<p class="guide_info_sub indent_para"><span class="indent_bullet">※</span><span class="indent_para_cont">입금자명을 꼭 확인해 주세요</span></p>
+								<div class="guide_btns_row"><a href="#" class="btn_guidebox">예약확인</a></div>
+							</div>
+						</div>
+						<div class="horizontal_box wid_long">
+							<span class="horizontal_flex_ico type2"></span>
+							<div class="horizontal_flex_content">
+								<div class="linkage_title_row"><p class="linkage_title">NOTICE</p></div>
+								<div class="linkage_content_row">
+									<ul class="linkage_data_list">
+										<li>
+											<div class="linkage_data_main">
+												<a href="#" class="linkage_data">여행의 가치를 느끼고 싶다면 홀리데이투어</a>
+												<span class="new_text_icon">N</span>
+											</div>
+											<div class="linkage_data_sub">2023.02.15</div>
+										</li>
+										<li>
+											<div class="linkage_data_main">
+												<a href="#" class="linkage_data">여행의 가치를 느끼고 싶다면 홀리데이투어여행의 가치를 느끼고 싶다면 홀리데이투어</a>
+												<span class="new_text_icon">N</span>
+											</div>
+											<div class="linkage_data_sub">2023.02.15</div>
+										</li>
+										<li>
+											<div class="linkage_data_main">
+												<a href="#" class="linkage_data">여행의 가치를 느끼고 싶다면 홀리데이투어</a>
+												<span class="new_text_icon">N</span>
+											</div>
+											<div class="linkage_data_sub">2023.02.15</div>
+										</li>
+										<li>
+											<div class="linkage_data_main">
+												<a href="#" class="linkage_data">여행의 가치를 느끼고 싶다면 홀리데이투어여행의 가치를 느끼고 싶다면 홀리데이투어</a>
+												<span class="new_text_icon">N</span>
+											</div>
+											<div class="linkage_data_sub">2023.02.15</div>
+										</li>
+									</ul>
+								</div>
+								<a href="#" class="btn_datamore"><span class="hdtext">NOTICE 더보기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // -->
+			</div>
+			<!-- // main contents -->
+			<script>
+				document.addEventListener("DOMContentLoaded",() => {
+					mainVisual();
+					mc_swiper_func();
+				});
+
+				$(function(){
+					var start_date_div = $("#start_date_div");
+					var date_div_parent = start_date_div.parents(".poslayer_z"); 
+					// 픽업 레이어 달력
+					start_date_div.datepicker({
+						beforeShow: function () {
+							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+							parentDateUpdate();
+						},
+						onSelect: function () {
+							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+							parentDateUpdate();
+						},
+						onChangeMonthYear: function () {
+							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+							parentDateUpdate();
+						}
+					});
+					start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+					parentDateUpdate();
+					
+
+					function parentDateUpdate(){
+						var getDate = start_date_div.datepicker("getDate");
+						var monthText = String(getDate.getMonth()).length == 1 ? `0${getDate.getMonth()}` : getDate.getMonth();
+						var dateText = String(getDate.getDate()).length == 1 ? `0${getDate.getDate()}` : getDate.getDate();
+						date_div_parent.attr("data-date",getDate.getFullYear()+"-"+monthText+"-"+dateText)
+					}
+				})
+			</script>
+			
+		</section>
+		<!-- // middle -->
+		@@include('./include/footer.html')
+
+		<!-- layer -->
+		<div class="poslayer_z" id="layer_box_01">
+            <div class="poslayer_titlow">
+                <p class="poslayer_tit">지역선택</p>
+            </div>
+            <div class="poslayer_contlow">
+                <div class="pcont_w">
+                    <div class="pclayer_scr_w">
+                        <ul class="pclayer_vlist">
+                            <li><a href="javascript:;" class="pcv_chk">남미</a></li>
+                            <li><a href="javascript:;" class="pcv_chk">중미</a></li>
+                            <li><a href="javascript:;" class="pcv_chk">아프리카</a></li>
+                            <li><a href="javascript:;" class="pcv_chk">유럽</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_psubmit_w">
+                    <a href="#" class="btn_psubmit">적용</a>
+                </div>
+            </div>
+            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+        </div>
+
+		<div class="poslayer_z" id="layer_box_02">
+            <div class="poslayer_titlow">
+                <p class="poslayer_tit">테마선택</p>
+            </div>
+            <div class="poslayer_contlow">
+                <div class="pcont_w">
+                    <div class="pclayer_scr_w">
+                        <ul class="pclayer_vlist">
+                            <li><a href="#" class="pcv_chk">세미팩</a></li>
+                            <li><a href="#" class="pcv_chk">스마트패키지</a></li>
+                            <li><a href="#" class="pcv_chk">어드밴쳐</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn_psubmit_w">
+                    <a href="#" class="btn_psubmit">적용</a>
+                </div>
+            </div>
+            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+        </div>
+		
+		<div class="poslayer_z wtype2" id="layer_box_03">
+            <div class="poslayer_titlow">
+                <p class="poslayer_tit">출발일 선택</p>
+            </div>
+            <div class="poslayer_contlow">
+                <div class="pcont_w">
+                    <div class="insert_date_parent" id="start_date_div">
+
+					</div>
+                </div>
+                <div class="btn_psubmit_w">
+                    <a href="#" class="btn_psubmit">적용</a>
+                </div>
+            </div>
+            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+        </div>
+		<!-- // layer -->
+	</div>
+</body>
+</html>

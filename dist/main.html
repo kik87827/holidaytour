@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-@@include('./include/head.html')
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1280" />
+	<link href="./css/common_c.css" rel="stylesheet"> <!-- 템플릿 사이트 common -->
+	<link href="./css/layout.css" rel="stylesheet">
+	<link href="./css/swiper.min.css" rel="stylesheet">
+	<link href="./css/jqueryui.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
+
+	<script src="./js/moment.min.js"></script>
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/hoverIntent.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/daterangepicker.js"></script>
+	<script src="./js/jquery-ui.js"></script>
+	<script src="./js/front.js"></script>
+	<title></title>
+</head>
 
 <body class="front_body">
 	<div class="page_wrap">
-		@@include('./include/header.html')
+		<!-- header -->
+		<header class="header_zone">
+			<div class="head_util_row">
+				<div class="head_util_inner">
+					<div class="head_util_left">
+						<p class="head_util_para">우리는 여행을 만들고, 고객은 우리를 만듭니다.</p>
+					</div>
+					<div class="head_util_right">
+						<ul class="head_util_list">
+							<li><a href="#" class="util_box">로그인</a></li>
+							<li><a href="#" class="util_text_item ico_men">회원가입</a></li>
+							<li><a href="#" class="util_text_item">예약확인/맞춤문의</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="head_main_row">
+				<div class="head_main_inner">
+					<div class="head_logo_item">
+						<h1 class="head_logo"><a href="#" class="head_top_logo"><img src="./images/toplogo.png" alt="홀리데이투어 HolidayTour"></a></h1>
+					</div>
+					<div class="head_search_item">
+						<div class="head_key_cols">
+							<div class="hkey_item">
+								<span class="hkey_label">HOT</span>
+								<a href="javascript:;" class="hkey_link">인기검색어</a>
+							</div>
+						</div>
+						<div class="head_form_cols">
+							<div class="head_search_form">
+								<input type="text" class="head_serach_input" placeholder="검색어를 입력하세요">
+								<a href="javascript:;" class="btn_head_search_submit"><span class="hdtext">검색</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="head_gnb_row">
+				<div class="head_gnb_fxwrap">
+					<div class="gnb_list_wrap">
+						<ul class="gnb_list">
+							<li><a href="#" class="gnb_one">태국골프</a></li>
+							<li><a href="#" class="gnb_one">대만골프</a></li>
+							<li><a href="#" class="gnb_one">태국패키지</a></li>
+							<li><a href="#" class="gnb_one">홍콩패키지</a></li>
+							<li><a href="#" class="gnb_one">대만패키지</a></li>
+							<li><a href="#" class="btn_gnb_utilbox">울릉도</a></li>
+						</ul>
+					</div>
+					<a href="#" class="btn_global_total"><span class="global_total_text">전체메뉴</span><span class="global_total_ico_wrap"><span class="global_total_ico"></span></span></a>
+				</div>
+			</div>
+		</header>
+		<!-- // header -->
+
+
+
 		<!-- middle -->
 		<section class="middle_zone">
 			<!-- main visual -->
@@ -87,7 +162,9 @@
 			<div class="mc_zone">
 				<!-- 골프 베스트 -->
 				<div class="mc_row vertical_item">
-					<div class="vertical_title_row"><p class="vertical_title">골프 베스트</p></div>
+					<div class="vertical_title_row">
+						<p class="vertical_title">골프 베스트</p>
+					</div>
 					<div class="vertical_control_row">
 						<div class="vertical_control_cols">
 							<div class="btn_mc_small_box_group">
@@ -421,7 +498,9 @@
 				<!-- // banner -->
 				<!-- 이번주 BEST 인기 -->
 				<div class="mc_row vertical_item">
-					<div class="vertical_title_row"><p class="vertical_title">이번주 BEST 인기</p></div>
+					<div class="vertical_title_row">
+						<p class="vertical_title">이번주 BEST 인기</p>
+					</div>
 					<div class="vertical_control_row">
 						<div class="btn_control_box_group">
 							<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
@@ -558,7 +637,9 @@
 				<!-- // 이번주 BEST 인기 -->
 				<!-- 울릉도 베스트 -->
 				<div class="mc_row vertical_item">
-					<div class="vertical_title_row"><p class="vertical_title">울릉도 베스트</p></div>
+					<div class="vertical_title_row">
+						<p class="vertical_title">울릉도 베스트</p>
+					</div>
 					<div class="btn_control_box_group">
 						<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
 						<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
@@ -715,7 +796,7 @@
 							<span class="horizontal_flex_ico"></span>
 							<div class="horizontal_flex_content">
 								<p class="guide_info_title">BANK INFO</p>
-								<p class="guide_info_tail">신한은행  140 013 296330<br>예금주  ㈜홀리데이투어</p>
+								<p class="guide_info_tail">신한은행 140 013 296330<br>예금주 ㈜홀리데이투어</p>
 								<p class="guide_info_sub indent_para"><span class="indent_bullet">※</span><span class="indent_para_cont">입금자명을 꼭 확인해 주세요</span></p>
 								<div class="guide_btns_row"><a href="#" class="btn_guidebox">예약확인</a></div>
 							</div>
@@ -723,7 +804,9 @@
 						<div class="horizontal_box wid_long">
 							<span class="horizontal_flex_ico type2"></span>
 							<div class="horizontal_flex_content">
-								<div class="linkage_title_row"><p class="linkage_title">NOTICE</p></div>
+								<div class="linkage_title_row">
+									<p class="linkage_title">NOTICE</p>
+								</div>
 								<div class="linkage_content_row">
 									<ul class="linkage_data_list">
 										<li>
@@ -765,106 +848,136 @@
 			</div>
 			<!-- // main contents -->
 			<script>
-				document.addEventListener("DOMContentLoaded",() => {
-					
+				document.addEventListener("DOMContentLoaded", () => {
+
 				});
 
-				$(function(){
+				$(function() {
 					var start_date_div = $("#start_date_div");
-					var date_div_parent = start_date_div.parents(".poslayer_z"); 
+					var date_div_parent = start_date_div.parents(".poslayer_z");
 					// 픽업 레이어 달력
 					start_date_div.datepicker({
-						beforeShow: function () {
+						beforeShow: function() {
 							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
 							parentDateUpdate();
 						},
-						onSelect: function () {
+						onSelect: function() {
 							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
 							parentDateUpdate();
 						},
-						onChangeMonthYear: function () {
+						onChangeMonthYear: function() {
 							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
 							parentDateUpdate();
 						}
 					});
 					start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
 					parentDateUpdate();
-					
 
-					function parentDateUpdate(){
+
+					function parentDateUpdate() {
 						var getDate = start_date_div.datepicker("getDate");
 						var monthText = String(getDate.getMonth()).length == 1 ? `0${getDate.getMonth()}` : getDate.getMonth();
 						var dateText = String(getDate.getDate()).length == 1 ? `0${getDate.getDate()}` : getDate.getDate();
-						date_div_parent.attr("data-date",getDate.getFullYear()+"-"+monthText+"-"+dateText)
+						date_div_parent.attr("data-date", getDate.getFullYear() + "-" + monthText + "-" + dateText)
 					}
 				})
 			</script>
-			
+
 		</section>
 		<!-- // middle -->
-		@@include('./include/footer.html')
+		<!-- footer -->
+		<footer class="footer_zone">
+			<div class="footer_main_low">
+				<div class="layout_pixin">
+					<div class="footer_botlogo"><img src="./images/footer_logo.png" alt="홀리데이투어"></div>
+					<div class="footer_botspec">
+						<ul class="footer_menu_list">
+							<li><a href="#" class="footer_menu">회사소개</a></li>
+							<li><a href="#" class="footer_menu">개인정보취급방침</a></li>
+							<li><a href="#" class="footer_menu">이용약관</a></li>
+							<li><a href="#" class="footer_menu">해외여행약관</a></li>
+							<li><a href="#" class="footer_menu">해외여행보험약관</a></li>
+						</ul>
+
+						<div class="footer_content_group">
+							<p class="footer_define_text">홀리데이투어</p>
+							<ul class="footer_address_list">
+								<li>서울본사 서울특별시 중구 무교로 28 시그너스빌딩 603호TEL. 02-6326-8888</li>
+								<li>대구지사 대구광역시 중구 동덕로 115 진석타워 1518호TEL. 053-716-1106</li>
+							</ul>
+							<p class="footer_copyright">COPYRIGHT 2019 (C) HOLIDAY TOUR ALL RIGHTS RESERVED.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn_gotop_row">
+				<a href="#" class="btn_gotop"><span class="hdtext">페이지 위로</span></a>
+			</div>
+		</footer>
+		<!-- // footer -->
 
 		<!-- layer -->
 		<div class="poslayer_z" id="layer_box_01">
-            <div class="poslayer_titlow">
-                <p class="poslayer_tit">지역선택</p>
-            </div>
-            <div class="poslayer_contlow">
-                <div class="pcont_w">
-                    <div class="pclayer_scr_w">
-                        <ul class="pclayer_vlist">
-                            <li><a href="javascript:;" class="pcv_chk">남미</a></li>
-                            <li><a href="javascript:;" class="pcv_chk">중미</a></li>
-                            <li><a href="javascript:;" class="pcv_chk">아프리카</a></li>
-                            <li><a href="javascript:;" class="pcv_chk">유럽</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="btn_psubmit_w">
-                    <a href="#" class="btn_psubmit">적용</a>
-                </div>
-            </div>
-            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
-        </div>
+			<div class="poslayer_titlow">
+				<p class="poslayer_tit">지역선택</p>
+			</div>
+			<div class="poslayer_contlow">
+				<div class="pcont_w">
+					<div class="pclayer_scr_w">
+						<ul class="pclayer_vlist">
+							<li><a href="javascript:;" class="pcv_chk">남미</a></li>
+							<li><a href="javascript:;" class="pcv_chk">중미</a></li>
+							<li><a href="javascript:;" class="pcv_chk">아프리카</a></li>
+							<li><a href="javascript:;" class="pcv_chk">유럽</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn_psubmit_w">
+					<a href="#" class="btn_psubmit">적용</a>
+				</div>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div>
 
 		<div class="poslayer_z" id="layer_box_02">
-            <div class="poslayer_titlow">
-                <p class="poslayer_tit">테마선택</p>
-            </div>
-            <div class="poslayer_contlow">
-                <div class="pcont_w">
-                    <div class="pclayer_scr_w">
-                        <ul class="pclayer_vlist">
-                            <li><a href="#" class="pcv_chk">세미팩</a></li>
-                            <li><a href="#" class="pcv_chk">스마트패키지</a></li>
-                            <li><a href="#" class="pcv_chk">어드밴쳐</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="btn_psubmit_w">
-                    <a href="#" class="btn_psubmit">적용</a>
-                </div>
-            </div>
-            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
-        </div>
-		
+			<div class="poslayer_titlow">
+				<p class="poslayer_tit">테마선택</p>
+			</div>
+			<div class="poslayer_contlow">
+				<div class="pcont_w">
+					<div class="pclayer_scr_w">
+						<ul class="pclayer_vlist">
+							<li><a href="#" class="pcv_chk">세미팩</a></li>
+							<li><a href="#" class="pcv_chk">스마트패키지</a></li>
+							<li><a href="#" class="pcv_chk">어드밴쳐</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn_psubmit_w">
+					<a href="#" class="btn_psubmit">적용</a>
+				</div>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div>
+
 		<div class="poslayer_z wtype2" id="layer_box_03">
-            <div class="poslayer_titlow">
-                <p class="poslayer_tit">출발일 선택</p>
-            </div>
-            <div class="poslayer_contlow">
-                <div class="pcont_w">
-                    <div class="insert_date_parent" id="start_date_div">
+			<div class="poslayer_titlow">
+				<p class="poslayer_tit">출발일 선택</p>
+			</div>
+			<div class="poslayer_contlow">
+				<div class="pcont_w">
+					<div class="insert_date_parent" id="start_date_div">
 
 					</div>
-                </div>
-                <div class="btn_psubmit_w">
-                    <a href="#" class="btn_psubmit">적용</a>
-                </div>
-            </div>
-            <button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
-        </div>
+				</div>
+				<div class="btn_psubmit_w">
+					<a href="#" class="btn_psubmit">적용</a>
+				</div>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div>
 		<!-- // layer -->
 	</div>
 </body>
+
 </html>

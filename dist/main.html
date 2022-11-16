@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=1280" />
+	<meta name="viewport" content="width=1340" />
 	<link href="./css/common_c.css" rel="stylesheet"> <!-- 템플릿 사이트 common -->
 	<link href="./css/layout.css" rel="stylesheet">
 	<link href="./css/swiper.min.css" rel="stylesheet">
@@ -158,6 +158,41 @@
 				</div>
 			</div>
 			<!-- // main visual -->
+			<script>
+				document.addEventListener("DOMContentLoaded", () => {
+					mainVisual();
+				});
+
+				$(function() {
+					var start_date_div = $("#start_date_div");
+					var date_div_parent = start_date_div.parents(".poslayer_z");
+					// 픽업 레이어 달력
+					start_date_div.datepicker({
+						beforeShow: function() {
+							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+							parentDateUpdate();
+						},
+						onSelect: function() {
+							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+							parentDateUpdate();
+						},
+						onChangeMonthYear: function() {
+							start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+							parentDateUpdate();
+						}
+					});
+					start_date_div.find(".ui-datepicker-next , .ui-datepicker-prev").addClass("layer_in_control");
+					parentDateUpdate();
+
+
+					function parentDateUpdate() {
+						var getDate = start_date_div.datepicker("getDate");
+						var monthText = String(getDate.getMonth()).length == 1 ? `0${getDate.getMonth()}` : getDate.getMonth();
+						var dateText = String(getDate.getDate()).length == 1 ? `0${getDate.getDate()}` : getDate.getDate();
+						date_div_parent.attr("data-date", getDate.getFullYear() + "-" + monthText + "-" + dateText)
+					}
+				})
+			</script>
 			<!-- main contents -->
 			<div class="mc_zone">
 				<!-- 골프 베스트 -->
@@ -925,10 +960,9 @@
 				<div class="pcont_w">
 					<div class="pclayer_scr_w">
 						<ul class="pclayer_vlist">
-							<li><a href="javascript:;" class="pcv_chk">남미</a></li>
-							<li><a href="javascript:;" class="pcv_chk">중미</a></li>
-							<li><a href="javascript:;" class="pcv_chk">아프리카</a></li>
-							<li><a href="javascript:;" class="pcv_chk">유럽</a></li>
+							<li><a href="javascript:;" class="pcv_chk">태국</a></li>
+							<li><a href="javascript:;" class="pcv_chk">홍콩</a></li>
+							<li><a href="javascript:;" class="pcv_chk">대만</a></li>
 						</ul>
 					</div>
 				</div>
@@ -947,9 +981,11 @@
 				<div class="pcont_w">
 					<div class="pclayer_scr_w">
 						<ul class="pclayer_vlist">
-							<li><a href="#" class="pcv_chk">세미팩</a></li>
-							<li><a href="#" class="pcv_chk">스마트패키지</a></li>
-							<li><a href="#" class="pcv_chk">어드밴쳐</a></li>
+							<li><a href="#" class="pcv_chk">태국골프</a></li>
+							<li><a href="#" class="pcv_chk">대만골프</a></li>
+							<li><a href="#" class="pcv_chk">태국패키지</a></li>
+							<li><a href="#" class="pcv_chk">홍콩패키지</a></li>
+							<li><a href="#" class="pcv_chk">대만패키지</a></li>
 						</ul>
 					</div>
 				</div>

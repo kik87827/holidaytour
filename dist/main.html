@@ -161,6 +161,7 @@
 			<script>
 				document.addEventListener("DOMContentLoaded", () => {
 					mainVisual();
+
 				});
 
 				$(function() {
@@ -208,7 +209,7 @@
 							</div>
 						</div>
 						<div class="vertical_control_cols">
-							<div class="btn_control_box_group">
+							<div class="btn_control_box_group" id="best_swiper_control">
 								<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
 								<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
 							</div>
@@ -231,7 +232,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">799,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -251,7 +252,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">1,090,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -271,7 +272,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">799,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -291,7 +292,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">1,090,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -311,7 +312,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">799,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -331,7 +332,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">1,090,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -341,12 +342,16 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					mcBestSwiper();
+					// mcBestSwiperUpdate(); // update
+				</script>
 				<!-- // 골프 베스트 -->
 				<!-- 패키지 베스트 -->
 				<div class="mc_row tape_design_item">
 					<div class="tape_design_inner">
 						<div class="tape_control_row">
-							<div class="btn_control_box_group">
+							<div class="btn_control_box_group" id="package_swiper_control">
 								<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
 								<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
 							</div>
@@ -384,15 +389,14 @@
 													</div>
 												</div>
 												<div class="spec_rows">
-													<span class="box_label">HOT</span>
-													<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+													<div class="mc_spec_title">A코스 81홀 #이스트파나호텔</div>
 													<div class="mc_spec_sub">
 														골프텔 숙박&그린피&조중석식 포함
 													</div>
 													<div class="mc_spec_price">
 														<div class="price_num_group">
 															<span class="price_num_value">799,000</span>
-															<span class="price_num_unit">원~</span>
+															<span class="price_num_unit">원</span>
 														</div>
 													</div>
 												</div>
@@ -408,15 +412,14 @@
 													</div>
 												</div>
 												<div class="spec_rows">
-													<span class="box_label">HOT</span>
-													<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
+													<div class="mc_spec_title">그린우드, 파타비아, 트레져힐</div>
 													<div class="mc_spec_sub">
 														골프텔 숙박&그린피&조중석식 포함
 													</div>
 													<div class="mc_spec_price">
 														<div class="price_num_group">
 															<span class="price_num_value">1,090,000</span>
-															<span class="price_num_unit">원~</span>
+															<span class="price_num_unit">원</span>
 														</div>
 													</div>
 												</div>
@@ -432,15 +435,14 @@
 													</div>
 												</div>
 												<div class="spec_rows">
-													<span class="box_label">HOT</span>
-													<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
+													<div class="mc_spec_title">클락 다색골프 4~6일</div>
 													<div class="mc_spec_sub">
 														골프텔 숙박&그린피&조중석식 포함
 													</div>
 													<div class="mc_spec_price">
 														<div class="price_num_group">
 															<span class="price_num_value">799,000</span>
-															<span class="price_num_unit">원~</span>
+															<span class="price_num_unit">원</span>
 														</div>
 													</div>
 												</div>
@@ -460,7 +462,7 @@
 													<div class="mc_spec_price">
 														<div class="price_num_group">
 															<span class="price_num_value">1,090,000</span>
-															<span class="price_num_unit">원~</span>
+															<span class="price_num_unit">원</span>
 														</div>
 													</div>
 												</div>
@@ -480,7 +482,7 @@
 													<div class="mc_spec_price">
 														<div class="price_num_group">
 															<span class="price_num_value">799,000</span>
-															<span class="price_num_unit">원~</span>
+															<span class="price_num_unit">원</span>
 														</div>
 													</div>
 												</div>
@@ -500,7 +502,7 @@
 													<div class="mc_spec_price">
 														<div class="price_num_group">
 															<span class="price_num_value">1,090,000</span>
-															<span class="price_num_unit">원~</span>
+															<span class="price_num_unit">원</span>
 														</div>
 													</div>
 												</div>
@@ -513,9 +515,13 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					mcPackageSwiper();
+					// mcPackageSwiperUpdate(); // update
+				</script>
 				<!-- // 패키지 베스트 -->
 				<!-- banner -->
-				<div class="mc_row swiper-container mc_banner_container">
+				<div class="mc_row swiper-container mc_banner_container" id="banner_swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<a href="#" class="mc_banner"><img src="./images/main/temp_long_banner_01.png" alt=""></a>
@@ -527,28 +533,34 @@
 							<a href="#" class="mc_banner"><img src="./images/main/temp_long_banner_03.png" alt=""></a>
 						</div>
 					</div>
-					<div class="swiper-pagination">
+					<div class="swiper-pagination mc_paging layer_type">
 					</div>
 				</div>
+				<script>
+					mcBannerSwiper();
+					// mcBannerSwiperUpdate();
+				</script>
 				<!-- // banner -->
 				<!-- 이번주 BEST 인기 -->
-				<div class="mc_row vertical_item">
+				<div class="mc_row vertical_item type2">
 					<div class="vertical_title_row">
 						<p class="vertical_title">이번주 BEST 인기</p>
 					</div>
-					<div class="vertical_control_row">
-						<div class="btn_control_box_group">
+					<div class="vertical_control_row type2">
+						<div class="btn_control_box_group" id="weekly_swiper_control">
 							<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
 							<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
 						</div>
 					</div>
 					<div class="vertical_slider_row">
-						<div class="mc_row swiper-container circle_thum_type" id="weekly_swiper">
+						<div class="mc_row swiper-container design_type2" id="weekly_swiper">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<a href="#" class="mc_thumbanner">
-										<div class="thum_rows">
-											<img src="./images/temp_300x300.png" alt="">
+										<div class="thum_rows_g">
+											<div class="thum_rows">
+												<img src="./images/temp_300x300.png" alt="">
+											</div>
 											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
 										</div>
 										<div class="spec_rows">
@@ -567,8 +579,10 @@
 								</div>
 								<div class="swiper-slide">
 									<a href="#" class="mc_thumbanner">
-										<div class="thum_rows">
-											<img src="./images/temp_300x300_2.png" alt="">
+										<div class="thum_rows_g">
+											<div class="thum_rows">
+												<img src="./images/temp_300x300_2.png" alt="">
+											</div>
 											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
 										</div>
 										<div class="spec_rows">
@@ -587,8 +601,10 @@
 								</div>
 								<div class="swiper-slide">
 									<a href="#" class="mc_thumbanner">
-										<div class="thum_rows">
-											<img src="./images/temp_300x300.png" alt="">
+										<div class="thum_rows_g">
+											<div class="thum_rows">
+												<img src="./images/temp_300x300.png" alt="">
+											</div>
 											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
 										</div>
 										<div class="spec_rows">
@@ -607,8 +623,10 @@
 								</div>
 								<div class="swiper-slide">
 									<a href="#" class="mc_thumbanner">
-										<div class="thum_rows">
-											<img src="./images/temp_300x300_2.png" alt="">
+										<div class="thum_rows_g">
+											<div class="thum_rows">
+												<img src="./images/temp_300x300.png" alt="">
+											</div>
 											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
 										</div>
 										<div class="spec_rows">
@@ -627,8 +645,10 @@
 								</div>
 								<div class="swiper-slide">
 									<a href="#" class="mc_thumbanner">
-										<div class="thum_rows">
-											<img src="./images/temp_300x300.png" alt="">
+										<div class="thum_rows_g">
+											<div class="thum_rows">
+												<img src="./images/temp_300x300_2.png" alt="">
+											</div>
 											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
 										</div>
 										<div class="spec_rows">
@@ -647,8 +667,10 @@
 								</div>
 								<div class="swiper-slide">
 									<a href="#" class="mc_thumbanner">
-										<div class="thum_rows">
-											<img src="./images/temp_300x300_2.png" alt="">
+										<div class="thum_rows_g">
+											<div class="thum_rows">
+												<img src="./images/temp_300x300_2.png" alt="">
+											</div>
 											<span class="ico_thum_label"><span class="hdtext">Good</span></span>
 										</div>
 										<div class="spec_rows">
@@ -669,15 +691,21 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					mcWeeklySwiper();
+					// mcWeeklySwiperUpdate();
+				</script>
 				<!-- // 이번주 BEST 인기 -->
 				<!-- 울릉도 베스트 -->
-				<div class="mc_row vertical_item">
+				<div class="mc_row vertical_item type3">
 					<div class="vertical_title_row">
 						<p class="vertical_title">울릉도 베스트</p>
 					</div>
-					<div class="btn_control_box_group">
-						<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
-						<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
+					<div class="vertical_control_row type2">
+						<div class="btn_control_box_group">
+							<a href="javascript:;" class="btn_control_box prev_go"><span class="hdtext">이전</span></a>
+							<a href="javascript:;" class="btn_control_box next_go"><span class="hdtext">다음</span></a>
+						</div>
 					</div>
 					<div class="vertical_slider_row">
 						<div class="swiper-container" id="best2_swiper">
@@ -688,7 +716,6 @@
 											<img src="./images/temp_298x278.png" alt="">
 										</div>
 										<div class="spec_rows">
-											<span class="box_label">HOT</span>
 											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
 											<div class="mc_spec_sub">
 												골프텔 숙박&그린피&조중석식 포함
@@ -696,7 +723,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">799,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -708,7 +735,6 @@
 											<img src="./images/temp_298x278_2.png" alt="">
 										</div>
 										<div class="spec_rows">
-											<span class="box_label">HOT</span>
 											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
 											<div class="mc_spec_sub">
 												골프텔 숙박&그린피&조중석식 포함
@@ -716,7 +742,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">1,090,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -728,7 +754,6 @@
 											<img src="./images/temp_298x278.png" alt="">
 										</div>
 										<div class="spec_rows">
-											<span class="box_label">HOT</span>
 											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
 											<div class="mc_spec_sub">
 												골프텔 숙박&그린피&조중석식 포함
@@ -736,7 +761,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">799,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -748,7 +773,6 @@
 											<img src="./images/temp_298x278_2.png" alt="">
 										</div>
 										<div class="spec_rows">
-											<span class="box_label">HOT</span>
 											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
 											<div class="mc_spec_sub">
 												골프텔 숙박&그린피&조중석식 포함
@@ -756,7 +780,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">1,090,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -768,7 +792,6 @@
 											<img src="./images/temp_298x278.png" alt="">
 										</div>
 										<div class="spec_rows">
-											<span class="box_label">HOT</span>
 											<div class="mc_spec_title">치앙마이 다색골프 5~6일</div>
 											<div class="mc_spec_sub">
 												골프텔 숙박&그린피&조중석식 포함
@@ -776,7 +799,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">799,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>
@@ -788,7 +811,6 @@
 											<img src="./images/temp_298x278_2.png" alt="">
 										</div>
 										<div class="spec_rows">
-											<span class="box_label">HOT</span>
 											<div class="mc_spec_title">클락 #레이크우드 #최저가보장</div>
 											<div class="mc_spec_sub">
 												골프텔 숙박&그린피&조중석식 포함
@@ -796,7 +818,7 @@
 											<div class="mc_spec_price">
 												<div class="price_num_group">
 													<span class="price_num_value">1,090,000</span>
-													<span class="price_num_unit">원~</span>
+													<span class="price_num_unit">원</span>
 												</div>
 											</div>
 										</div>

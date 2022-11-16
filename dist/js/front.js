@@ -234,3 +234,116 @@ function mainVisual(){
 		mv_zone.classList.add("nodata_type");
 	}
 }
+
+
+var mc_bestswiper_obj = null;
+function mcBestSwiper(){
+	let target_swiper = document.querySelector("#best_swiper");
+	let target_swiper_slide = document.querySelectorAll(`#best_swiper .swiper-slide`);
+	if(target_swiper_slide.length>1){
+		mc_bestswiper_obj = new Swiper("#best_swiper", {
+			speed : 800,
+			slidesPerView: 4, 
+			slidesPerGroup: 4,
+			loop : true,
+			navigation: {
+				nextEl: `#best_swiper_control .next_go`,
+				prevEl: `#best_swiper_control .prev_go`,
+			}
+		});
+	}else{
+		target_swiper.classList.add("nodata_type");
+	}
+}
+
+function mcBestSwiperUpdate(){
+	if(mc_bestswiper_obj !== null){
+		mc_bestswiper_obj.update();
+	}
+}
+
+
+var mc_package_swiper_obj = null;
+function mcPackageSwiper(){
+	let target_swiper = document.querySelector("#package_swiper");
+	let target_swiper_slide = document.querySelectorAll(`#package_swiper .swiper-slide`);
+	if(target_swiper_slide.length>1){
+		mc_package_swiper_obj = new Swiper("#package_swiper", {
+			speed : 800,
+			slidesPerView: 3, 
+			slidesPerGroup: 3,
+			loop : true,
+			navigation: {
+				nextEl: `#package_swiper_control .next_go`,
+				prevEl: `#package_swiper_control .prev_go`,
+			}
+		});
+	}else{
+		target_swiper.classList.add("nodata_type");
+	}
+}
+
+function mcPackageSwiperUpdate(){
+	if(mc_package_swiper_obj !== null){
+		mc_package_swiper_obj.update();
+	}
+}
+
+
+var mc_banner_obj = null;
+function mcBannerSwiper(){
+	let target_swiper = document.querySelector("#banner_swiper");
+	let target_swiper_slide = document.querySelectorAll(`#banner_swiper .swiper-slide`);
+	if(target_swiper_slide.length>1){
+		mc_banner_obj = new Swiper("#banner_swiper", {
+			speed : 800,
+			loop : true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false
+			},
+			pagination: {
+				clickable: true,
+				el: "#banner_swiper .swiper-pagination",
+			},
+		});
+	}else{
+		target_swiper.classList.add("nodata_type");
+	}
+}
+
+function mcBannerSwiperUpdate(){
+	if(mc_banner_obj !== null){
+		mc_banner_obj.update();
+	}
+}
+
+
+
+
+
+var mc_weekly_swiper_obj = null;
+function mcWeeklySwiper(){
+	let target_swiper = document.querySelector("#weekly_swiper");
+	let target_swiper_slide = document.querySelectorAll(`#weekly_swiper .swiper-slide`);
+	if(target_swiper_slide.length>1){
+		mc_weekly_swiper_obj = new Swiper("#weekly_swiper", {
+			speed : 800,
+			slidesPerView: 4, 
+			slidesPerGroup: 4,
+			loop : true,
+			navigation: {
+				nextEl: `#weekly_swiper_control .next_go`,
+				prevEl: `#weekly_swiper_control .prev_go`,
+			}
+		});
+	}else{
+		target_swiper.classList.add("nodata_type");
+	}
+}
+
+function mcWeeklySwiperUpdate(){
+	if(mc_weekly_swiper_obj !== null){
+		mc_weekly_swiper_obj.update();
+	}
+}

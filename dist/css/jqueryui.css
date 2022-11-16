@@ -331,7 +331,7 @@ tr td.ui-datepicker-week-end:first-of-type a{color:#d13249;}
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	background: #0069b8 !important;
+	background: #f9cf10 !important;
 	color: #fff !important;
 	border-radius:100%;
 	min-width:8px;text-align:center;

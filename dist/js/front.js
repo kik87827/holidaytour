@@ -240,7 +240,7 @@ var mc_bestswiper_obj = null;
 function mcBestSwiper(){
 	let target_swiper = document.querySelector("#best_swiper");
 	let target_swiper_slide = document.querySelectorAll(`#best_swiper .swiper-slide`);
-	if(target_swiper_slide.length>1){
+	if(target_swiper_slide.length>4){
 		mc_bestswiper_obj = new Swiper("#best_swiper", {
 			speed : 800,
 			slidesPerView: 4, 
@@ -252,7 +252,7 @@ function mcBestSwiper(){
 			}
 		});
 	}else{
-		target_swiper.classList.add("nodata_type");
+		document.querySelector("#best_swiper_control").style.display = "none";
 	}
 }
 
@@ -267,7 +267,7 @@ var mc_package_swiper_obj = null;
 function mcPackageSwiper(){
 	let target_swiper = document.querySelector("#package_swiper");
 	let target_swiper_slide = document.querySelectorAll(`#package_swiper .swiper-slide`);
-	if(target_swiper_slide.length>1){
+	if(target_swiper_slide.length>3){
 		mc_package_swiper_obj = new Swiper("#package_swiper", {
 			speed : 800,
 			slidesPerView: 3, 
@@ -279,7 +279,7 @@ function mcPackageSwiper(){
 			}
 		});
 	}else{
-		target_swiper.classList.add("nodata_type");
+		document.querySelector("#package_swiper_control").style.display = "none";
 	}
 }
 
@@ -326,7 +326,7 @@ var mc_weekly_swiper_obj = null;
 function mcWeeklySwiper(){
 	let target_swiper = document.querySelector("#weekly_swiper");
 	let target_swiper_slide = document.querySelectorAll(`#weekly_swiper .swiper-slide`);
-	if(target_swiper_slide.length>1){
+	if(target_swiper_slide.length>4){
 		mc_weekly_swiper_obj = new Swiper("#weekly_swiper", {
 			speed : 800,
 			slidesPerView: 4, 
@@ -338,12 +338,39 @@ function mcWeeklySwiper(){
 			}
 		});
 	}else{
-		target_swiper.classList.add("nodata_type");
+		document.querySelector("#weekly_swiper_control").style.display = "none";
 	}
 }
 
 function mcWeeklySwiperUpdate(){
 	if(mc_weekly_swiper_obj !== null){
 		mc_weekly_swiper_obj.update();
+	}
+}
+
+
+
+var mc_best2_swiper_obj = null;
+function mcBestSwiper2(){
+	let target_swiper = document.querySelector("#best2_swiper");
+	let target_swiper_slide = document.querySelectorAll(`#best2_swiper .swiper-slide`);
+	if(target_swiper_slide.length>4){
+		mc_best2_swiper_obj = new Swiper("#best2_swiper", {
+			speed : 800,
+			slidesPerView: 4, 
+			slidesPerGroup: 4,
+			loop : true,
+			navigation: {
+				nextEl: `#best2_swiper_control .next_go`,
+				prevEl: `#best2_swiper_control .prev_go`,
+			}
+		});
+	}else{
+		document.querySelector("#best2_swiper_control").style.display = "none";
+	}
+}
+function mcBestSwiper2Update(){
+	if(mc_best2_swiper_obj !== null){
+		mc_best2_swiper_obj.update();
 	}
 }

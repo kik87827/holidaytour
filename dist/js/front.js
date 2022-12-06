@@ -10,7 +10,18 @@ document.addEventListener("DOMContentLoaded",() => {
 });
 window.addEventListener("load",() => {
 	posLayerEvent();
+	
 });
+
+function subMinHeight(){
+	var sub_middle = document.querySelector(".sub_middle");
+	var sub_middle_pos = sub_middle !== null ? sub_middle.getBoundingClientRect().top : 0;
+	var footer_zone = document.querySelector(".footer_zone");
+	var footer_zone_height = footer_zone !== null ? footer_zone.offsetHeight : 0;
+	if(sub_middle !== null){
+		sub_middle.style.minHeight = `calc(100vh - ${sub_middle_pos + footer_zone_height}px)`
+	}
+}
 
 function commonResize(){
 	var $window_width = 0;

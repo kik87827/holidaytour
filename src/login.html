@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('./include/head.html')
+
+<body class="front_body">
+	<div class="page_wrap">
+		@@include('./include/header.html')
+		<!-- middle -->
+		<section class="middle_zone sub_middle">
+			<div class="middle_formbox_wrap">
+				<div class="middle_formbox">
+					<h2 class="formbox_title">로그인</h2>
+					<div class="forminput_group">
+						<input type="text" class="form_input" placeholder="아이디">
+						<input type="password" class="form_input" placeholder="비밀번호">
+					</div>
+					<div class="formelse_group">
+						<div class="props_form_item">
+							<input type="checkbox" class="props_form" id="props_check">
+							<label for="props_check" class="props_label">아이디 저장</label>
+						</div>
+						<div class="props_util_group">
+							<a href="#" class="textonly_item">아이디 &amp; 비밀번호 찾기</a>
+						</div>
+					</div>
+					<div class="btn_formsubmit_group">
+						<div class="formsubmit_vitem"><a href="#" class="btn_formsubmit">로그인</a></div>
+						<div class="formsubmit_vitem"><a href="#" class="btn_formsubmit type2">홀리데이투어 회원가입</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- // middle -->
+		@@include('./include/footer.html')
+		<script>
+			window.addEventListener("load",()=>{
+				subMinHeight();
+			})
+		</script>
+	</div>
+</body>
+</html>

@@ -296,8 +296,10 @@ input.props_form:checked{background-color:#455267;background-position:0 100%;bor
 
 
 /* 230120 */
-.main_visual_group{position:relative;}
-.main_visual_group .btn_main_swiper_control{z-index:5;display:block;width:50px;height:50px;background:url("../images/main/btn_mv_left.png") no-repeat 50% 50%;position:absolute;top:50%;transform: translateY(-50%);}
+.main_visual_group{position:relative;max-width:1920px;margin:0 auto;}
+.main_visual_group:hover{}
+.main_visual_group:hover .btn_main_swiper_control{display:block;}
+.main_visual_group .btn_main_swiper_control{z-index:5;display:none;width:50px;height:50px;background:url("../images/main/btn_mv_left.png") no-repeat 50% 50%;position:absolute;top:50%;transform: translateY(-50%);}
 .main_visual_group .btn_main_swiper_control.prev_control{left:25px;}
 .main_visual_group .btn_main_swiper_control.next_control{background-image:url("../images/main/btn_mv_right.png");right:25px;left:auto;}
 .main_visual_group .swiper-container.main_swiper_container{}

@@ -125,3 +125,37 @@ input.head_serach_input::input-placeholder{color:#999 !important;}
 .btn_gotop_row{position:absolute;top:0;left:50%;width:1280px;z-index:20;height:0;transform: translateX(-50%);}
 .btn_gotop_row.type2{top:-50px;}
 .btn_gotop{display:inline-block;width:63px;height:63px;background:#1c1c1c;position:absolute;top:50%;right:-92px;transform: translateY(-35%);background:#1c1c1c url("../images/btn_topgo.png") no-repeat 50% 50%;}
+
+
+/* 230120 */
+.header_group{}
+.header_util_row{background:#f9cf10;}
+.header_util_ingroup{width:1280px;margin:0 auto;height:67px;display:flex;justify-content: space-between;}
+.header_kindtab_wrap{display:flex;height:67px;align-items: flex-end;}
+.header_kindtab_list{display:flex;height:54px;align-items: flex-end;}
+.header_kindtab_list > li{margin:0 -1px;}
+.header_kindtab_list > li.active{}
+.header_kindtab_list > li.active .header_kindtab{background-position:0 100%;}
+.header_kindtab_list > li:last-of-type{}
+.header_kindtab{display:flex;width:284px;font-size:20px;font-weight:500;color:#5d5c5c;background:url("../images/bg_kindtab.png") no-repeat 0 0;height:54px;justify-content: center;align-items: center;}
+
+.header_util_wrap{display:flex;align-items: center;}
+.header_util_wrap .head_util_list{}
+.header_util_wrap .head_util_list > li{margin-right:20px;}
+.header_util_wrap .head_util_list > li.active{}
+.header_util_wrap .head_util_list > li.active .header_kindtab{}
+.header_util_wrap .head_util_list > li:last-of-type{margin-right:0 !important}
+.header_util_wrap .head_util_list .util_box{border-color:rgba(0,0,0,0.5);}
+
+.header_main_row{border-bottom:1px solid #d6d6d6;}
+.header_main_ingroup{width:1280px;margin:0 auto;height:88px;display:flex;align-items: center;}
+.header_main_logo{display:inline-block;width:124px; flex:0 0 124px;}
+.header_main_logo_link{display:inline-block;}
+.header_main_logo_link img{vertical-align: top;}
+.header_menu_list_wrap{flex:1;min-width:0;display:flex;}
+.header_menu_list{display:flex;width:100%;justify-content: flex-end;}
+.header_menu_list > li{padding:0 58px;}
+.header_menu_list > li:last-of-type{}
+.header_menu_item{display:inline-block;color:#1f1f1f;font-size:19px;font-weight:500;line-height:1;}
+.header_menu_item:hover{color:#f9cf10;}
+/* // 230120 */

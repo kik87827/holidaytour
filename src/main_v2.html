@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('./include/head.html')
+
+<body class="front_body">
+	<div class="page_wrap">
+		<header class="header_group">
+			<div class="header_util_row">
+				<div class="header_util_ingroup">
+					<div class="header_kindtab_wrap">
+						<ul class="header_kindtab_list">
+							<li class="active"><a href="#" class="header_kindtab">항공권</a></li>
+							<li><a href="#" class="header_kindtab">패키지</a></li>
+						</ul>
+					</div>
+					<div class="header_util_wrap">
+						<ul class="head_util_list">
+							<li><a href="#" class="util_box">로그인</a></li>
+							<li><a href="#" class="util_text_item ico_men">마이페이지</a></li>
+							<li><a href="#" class="util_text_item">고객센터</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header_main_row">
+				<div class="header_main_ingroup">
+					<h1 class="header_main_logo"><a href="#" class="header_main_logo_link"><img src="./images/toplogo_ams.png" alt=""></a></h1>
+					<div class="header_menu_list_wrap">
+						<ul class="header_menu_list">
+							<li><a href="#" class="header_menu_item">베트남</a></li>
+							<li><a href="#" class="header_menu_item">태국</a></li>
+							<li><a href="#" class="header_menu_item">대만</a></li>
+							<li><a href="#" class="header_menu_item">몽골</a></li>
+							<li><a href="#" class="header_menu_item">중국</a></li>
+							<li><a href="#" class="header_menu_item">홍콩</a></li>
+							<li><a href="#" class="header_menu_item">제주도</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="main_visual_group">
+			<a href="javascript:;" class="btn_main_swiper_control prev_control"><span class="hdtext">이전</span></a>
+			<div class="swiper-container main_swiper_container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#" class="mv_item" style="background-image:url(./images/main/mv_01.jpg)"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="mv_item" style="background-image:url(./images/main/mv_02.jpg)"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#" class="mv_item" style="background-image:url(./images/main/mv_03.jpg)"></a>
+					</div>
+				</div>
+			</div>
+			<a href="javascript:;" class="btn_main_swiper_control next_control"><span class="hdtext">다음</span></a>
+			<div class="mv_bottom_control_wrap type2">
+				<div class="mv_bottom_in_control">
+					<div class="mv_bottom_cols has_navi">
+						<div class="swiper-pagination main_visual_paging">
+						</div>
+					</div>
+					<div class="mv_bottom_cols has_auto">
+						<ul class="swiper_auto_control_list">
+							<li><a href="#" class="btn_mv_stop"><span class="hdtext">정지</span></a></li>
+							<li><a href="#" class="btn_mv_play"><span class="hdtext">재생</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			document.addEventListener("DOMContentLoaded",() => {
+				mainVisual2();
+			});
+		</script>
+	</div>
+</body>
+</html>
